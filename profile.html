@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2>Paradox Gaming</h2>
+</header>
+
+<div class="profile">
+  <h3>Kullanıcı: <span id="puser"></span></h3>
+  <p>Yetki: Üye</p>
+  <p>Bakiye: 0 TL</p>
+
+  <h4>VIP Paketleri</h4>
+  <ul>
+    <li>VIP – 50 TL</li>
+    <li>VIP+ – 100 TL</li>
+    <li>MVIP – 150 TL</li>
+    <li>QBVIP – 200 TL</li>
+  </ul>
+</div>
+
+<script>
+document.getElementById("puser").innerText =
+localStorage.getItem("user") || "Bilinmiyor";
+</script>
+
+</body>
+</html>
